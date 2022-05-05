@@ -168,7 +168,7 @@ main {
 .projects {
     grid-area: 1/1/3/4;
     background-color: var(--sec-background);
-    margin: 0px 1rem 1rem 0px;
+    margin: 0px 0rem 1rem 0px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto repeat(3, 1fr);
@@ -215,3 +215,64 @@ main {
     align-self: end;
     padding-right: 1rem;
 }
+
+aside {
+    grid-area: 1/4/3/5;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.aside-flex {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    margin: 0px 10px 10px 10px;
+    width: 85%;
+}
+
+#announcements > h3 {
+    margin-bottom: 18px;
+}
+
+.white-card {
+    background-color: white;
+    box-shadow: 2px 2px 4px var(--shadow);
+    height: 100%;
+    padding: 10px;
+    border-radius: 0.2rem;
+}
+
+.announcements {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
+.announcement {
+    margin: 0px 15px 15px 15px;
+    height: auto;
+    width: 85%;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+}
+
+.announcement:last-child {
+    border-bottom: none;
+}
+
+.announcement > h6 {
+    margin: 0px;
+    font-weight: 700;
+    font-size: 0.8rem;
+    margin-bottom: 3px;
+}
+
+.announcement > p {
+    font-size: 0.7rem;
+    text-align: start;
+    margin: 5px 0px 0px 0px;
+}
+
